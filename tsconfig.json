@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2016",                                  // Set the JavaScript language version for emitted JavaScript and include compatible library declarations.
+    "module": "commonjs",                                // Specify what module code is generated.
+    "rootDir": "./src",                                  // Specify the root folder within your source files.
+    "outDir": "./dist",                                  // Specify an output folder for all emitted files.
+    "strict": true,
+    "moduleResolution": "node",
+
+    /* Module Resolution Options */
+    "esModuleInterop": true,                             // Emit additional JS to ease support for importing CommonJS modules.
+    "forceConsistentCasingInFileNames": true,            // Ensure that casing is correct in imports.
+    "skipLibCheck": true,                                // Skip type checking all .d.ts files.
+
+    /* Source Map Options */
+    "sourceMap": true,                                   // Create source map files for emitted JavaScript files.
+
+    /* Experimental Options */
+    "allowSyntheticDefaultImports": true,                // Allow 'import x from y' when a module doesn't have a default export.
+    "resolveJsonModule": true                            // Enable importing .json files.
+  },
+  "include": [
+    "src/**/*"                                           // Include all TypeScript files in the src directory.
+  ],
+  "exclude": [
+    "node_modules",                                      // Exclude node_modules directory from compilation.
+    "dist"                                               // Exclude dist directory from compilation.
+  ]
+}
